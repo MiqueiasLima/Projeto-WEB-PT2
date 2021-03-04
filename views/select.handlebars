@@ -1,0 +1,32 @@
+<table>
+    <tr>
+        <td>Action</td>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Proprietario</td>
+        <td>Especie</td>
+        <td>Raça</td>
+        <td>Pelagem</td>
+        <td>Sexo</td>
+        <td>Peso</td>
+        <td>Idade</td>
+        <td>Nascimento</td>
+    </tr>
+
+    {{#data}}
+    <tr id="tdDados">
+        <td><a href="update/{{id}}"><img class="editarDados" src="/imgs/editar.png"></a>
+        <a href="deletar/{{id}}"><img class="apagarDados" src="/imgs/deletar.png"></a></td>
+        <td>{{id}}</td>
+        <td>{{name}}</td>
+        <td>{{proprietario}}</td>
+        <td>{{especie}}</td>
+        <td>{{raca}}</td>
+        <td>{{pelagem}}</td>
+        <td>{{sexo}}</td>
+        <td>{{peso}}</td>
+        <td>{{idade}}</td>
+        <td>{{nascimento}}</td>
+    </tr>
+    {{/data}}
+</table>
